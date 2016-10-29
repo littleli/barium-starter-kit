@@ -53,4 +53,7 @@ setInterval(() => {
   appState.timer += 1;
 }, 5000);
 
-ReactDOM.render(<TimerView appState={appState} />, document.getElementById('app'));
+const main = () =>
+  ReactDOM.render(<TimerView appState={appState} />, document.getElementById('app'));
+
+main();

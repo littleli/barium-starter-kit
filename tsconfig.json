@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "es2015",
-    "target": "es6",
+    "target": "es5",
     "moduleResolution": "node",
     "outDir": "dist",
     "rootDir": "./",
@@ -12,23 +12,19 @@
     "skipLibCheck": true,
     "noImplicitAny": true,
     "removeComments": true,
-    "sourceMap": false,
-    "inlineSourceMap": true,
-    "declaration": true,
+    "sourceMap": true,
+    "declaration": false,
     "noEmitHelpers": false,
     "lib": [
       "dom",
-      "es2015"
+      "es5",
+      "es2015.promise"
     ]
   },
   "exclude": [
     "node_modules",
     "dist"
   ],
-  "awesomeTypescriptLoaderOptions": {
-    "useBabel": true,
-    "useCache": true
-  },
   "compileOnSave": false,
   "buildOnSave": false
 }
